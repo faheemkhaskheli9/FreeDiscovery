@@ -16,12 +16,12 @@ from collections import deque
 
 from sklearn.metrics.pairwise import euclidean_distances
 from sklearn.base import TransformerMixin, ClusterMixin, BaseEstimator
-from sklearn.externals.six.moves import xrange
+from six.moves import xrange
 from sklearn.utils import check_array
 from sklearn.utils.extmath import row_norms, safe_sparse_dot
 from sklearn.utils.validation import check_is_fitted
 from sklearn.exceptions import NotFittedError
-from sklearn.cluster.hierarchical import AgglomerativeClustering
+from sklearn.cluster import AgglomerativeClustering
 
 
 def _iterate_sparse_X(X):
