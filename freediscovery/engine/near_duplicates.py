@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 import numpy as np
 
 from freediscovery.engine.base import _BaseWrapper
