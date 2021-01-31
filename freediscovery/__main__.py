@@ -6,7 +6,8 @@ import shutil
 from subprocess import call
 from pathlib import Path
 
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 
 from .server import fd_app
 from freediscovery.engine.cli import (_query_yes_no, _TeeLogger,
