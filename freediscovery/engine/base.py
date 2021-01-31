@@ -2,7 +2,8 @@
 
 import os
 
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 
 from freediscovery.engine.vectorizer import FeatureVectorizer
 from freediscovery.engine.pipeline import PipelineFinder
