@@ -130,7 +130,7 @@ class FeaturesApi(Resource):
              - `column_ids` : list of ints. If provided the input dataset is expected to be CSV, and the columns with the provided ids are selected. Documents can only be provided using `dataset_definition` parameter that must contain a single file path
              - `column_separator`: str, character used to delimit columns. Only used if `column_ids` is provided. Default: ','
             """))
-    @use_args(FeaturesParsSchema(strict=True, exclude=('data_dir')))
+    @use_args(FeaturesParsSchema(exclude=['data_dir']))
     @marshal_with(IDSchema())
     def post(self, **args):
         if args['use_hashing']:
