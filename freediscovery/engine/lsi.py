@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 
 from freediscovery.engine.base import _BaseWrapper
 from freediscovery.lsi import _compute_lsi_dimensionality, _TruncatedSVD_LSI
