@@ -2,7 +2,8 @@
 
 import warnings
 
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 
 from freediscovery.engine.base import _BaseWrapper
 from freediscovery.search import Search
