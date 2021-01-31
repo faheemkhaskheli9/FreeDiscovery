@@ -3,7 +3,7 @@
 import os
 import os.path
 
-from sklearn.externals.joblib import dump, load
+from joblib import dump, load
 
 from freediscovery.engine.pipeline import PipelineFinder
 
