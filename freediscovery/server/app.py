@@ -5,7 +5,7 @@ import os.path
 from flask import Flask, jsonify, json
 from flask.testing import FlaskClient
 from flask_apispec import FlaskApiSpec
-
+from apispec.ext.marshmallow import MarshmallowPlugin
 from apispec import APISpec
 
 from .resources import (FeaturesApi, FeaturesApiElement,
@@ -62,7 +62,7 @@ def fd_app(cache_dir, config=None):
     app.config.update(
          {'APISPEC_SPEC': APISpec(title='FreeDiscovery',
                                   version='v0',
-                                  plugins=['apispec.ext.marshmallow']),
+                                  plugins=[MarshmallowPlugin()]),
           'APISPEC_SWAGGER_URL': '/openapi-specs.json',
           'APISPEC_SWAGGER_UI_URL': '/swagger-ui.html'})
 
