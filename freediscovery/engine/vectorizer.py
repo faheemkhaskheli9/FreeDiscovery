@@ -9,7 +9,7 @@ import time
 import numpy as np
 import pandas as pd
 import scipy.sparse
-import sklearn.externals 
+import sklearn.externals
 import joblib
 from joblib import Parallel, delayed
 from sklearn.feature_extraction.text import CountVectorizer
