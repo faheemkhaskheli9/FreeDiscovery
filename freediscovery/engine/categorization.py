@@ -2,7 +2,8 @@
 
 import numpy as np
 from scipy.special import logit, expit
-from sklearn.externals import joblib
+import sklearn.externals 
+import joblib
 from sklearn.preprocessing import LabelEncoder
 
 from freediscovery.engine.base import _BaseWrapper
