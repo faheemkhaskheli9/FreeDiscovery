@@ -61,7 +61,8 @@ def fd_app(cache_dir, config=None):
     app.url_map.strict_slashes = False
     app.config.update(
          {'APISPEC_SPEC': APISpec(title='FreeDiscovery',
-                                  version='v0',
+                                  version='v0', 
+                                  openapi_version = '3.0.3',                                  
                                   plugins=[MarshmallowPlugin()]),
           'APISPEC_SWAGGER_URL': '/openapi-specs.json',
           'APISPEC_SWAGGER_UI_URL': '/swagger-ui.html'})
