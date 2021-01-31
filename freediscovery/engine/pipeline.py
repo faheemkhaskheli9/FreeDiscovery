@@ -7,7 +7,8 @@ from freediscovery.exceptions import ModelNotFound
 from freediscovery.utils import _split_path
 from pathlib import Path
 
-from sklearn.externals import joblib
+import sklearn.externals
+import joblib
 
 
 class PipelineFinder(OrderedDict):
